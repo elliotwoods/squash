@@ -24,6 +24,7 @@ before_build:
       mkdir build
       cd build
   - ps: |
+      Get-Content "C:\mingw\include\parts\time.h"
       If ($env:GENERATOR -eq "MinGW Makefiles") {
         cmake -G "$env:GENERATOR" -DCMAKE_BUILD_TYPE="$env:CONFIGURATION" ..
       } Else {

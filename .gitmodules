@@ -12,7 +12,7 @@
 	url = https://github.com/nemequ/lzjb.git
 [submodule "squash/tinycthread"]
 	path = squash/tinycthread
-	url = https://github.com/tinycthread/tinycthread.git
+	url = https://github.com/nemequ/tinycthread.git
 [submodule "plugins/fari/FastARI"]
 	path = plugins/fari/FastARI
 	url = https://github.com/davidcatt/FastARI.git
