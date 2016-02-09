@@ -685,6 +685,15 @@ squash_context_get_default (void) {
   return squash_context_default;
 }
 
+void
+squash_set_plugin_directory(const char * directory) {
+#if !defined(_WIN32)
+	setenv("SQUASH_PLUGINS", directory, 1);
+#else
+	_putenv_s("SQUASH_PLUGINS", directory);
+#endif
+}
+
 /**
  * @}
  */
